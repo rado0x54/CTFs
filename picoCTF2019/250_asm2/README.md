@@ -10,7 +10,7 @@ asm2:
 <+1>:	mov    ebp,esp                    2. Save esp in ebp 
 <+3>:	sub    esp,0x10                   3. esp -= 0x10 (space for locals)
 <+6>:	mov    eax,DWORD PTR [ebp+0xc]    4. eax = 0x21
-  <+9>:	mov    DWORD PTR [ebp-0x4],eax    5. local_a = 0x21
+<+9>:	mov    DWORD PTR [ebp-0x4],eax    5. local_a = 0x21
 <+12>:	mov    eax,DWORD PTR [ebp+0x8]    6. eax = 0x4
 <+15>:	mov    DWORD PTR [ebp-0x8],eax    7. local_b = 0x4
 <+18>:	jmp    0x509 <asm2+28>            -> fixed jump
